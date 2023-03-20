@@ -102,12 +102,6 @@ class TrainDataset(BaseAnomalyDetectionDataset):
         resized_depth_map_3channel = resize_organized_pc(depth_map_3channel)
         resized_organized_pc = resize_organized_pc(organized_pc, target_height=self.size, target_width=self.size)
         resized_organized_pc = resized_organized_pc.clone().detach().float()
-        #print(resized_organized_pc.shape)
-        #print(resized_organized_pc[:, 100:110, 112])
-        #print(resized_organized_pc.max(), resized_organized_pc.min(), resized_organized_pc.mean(), resized_organized_pc.std())
-        #print(resized_organized_pc[0].max(), resized_organized_pc[0].min(), resized_organized_pc[0].mean(), resized_organized_pc[0].std())
-        #print(resized_organized_pc[1].max(), resized_organized_pc[1].min(), resized_organized_pc[1].mean(), resized_organized_pc[1].std())
-        #print(resized_organized_pc[2].max(), resized_organized_pc[2].min(), resized_organized_pc[2].mean(), resized_organized_pc[2].std())
 
         return (img, resized_organized_pc, resized_depth_map_3channel), label
 
