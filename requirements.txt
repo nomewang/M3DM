@@ -1,0 +1,16 @@
+numpy
+Pillow
+scikit-learn
+scipy
+timm
+torch
+torchvision
+tqdm
+wget
+tifffile
+scikit-image
+kornia
+imageio
+tensorboard
+opencv-python
+setuptools==59.5.0;
