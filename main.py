@@ -76,7 +76,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_feature', default=False, action='store_true',
                         help='Save feature for training fusion block.')
     parser.add_argument('--use_uff', default=False, action='store_true',
-                        help='Save feature for training fusion block.')
+                        help='Use UFF module.')
     parser.add_argument('--save_feature_path', default='datasets/patch_lib', type=str,
                         help='Save feature for training fusion block.')
     parser.add_argument('--save_preds', default=False, action='store_true',
