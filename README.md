@@ -88,7 +88,7 @@ python3 main.py \
 --memory_bank multiple \
 --rgb_backbone_name vit_base_patch8_224_dino \
 --xyz_backbone_name Point_MAE \
---fusion_module_path checkpoints/fusion_checkpoint.pth \
+--fusion_module_path checkpoints/{FUSION_CHECKPOINT}.pth \
 ```
 
 Note: if you set `--method_name DINO` or `--method_name Point_MAE`, set `--memory_bank single` at the same time. 
