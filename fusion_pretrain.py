@@ -107,7 +107,7 @@ def main(args):
     cudnn.benchmark = True
 
     
-    dataset_train = data.dataset.PreTrainTensorDataset(args.data_path)
+    dataset_train = dataset.PreTrainTensorDataset(args.data_path)
 
     print(dataset_train)
 
