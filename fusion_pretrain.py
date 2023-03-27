@@ -21,7 +21,7 @@ from utils.misc import NativeScalerWithGradNormCount as NativeScaler
 
 from engine_fusion_pretrain import train_one_epoch
 
-import data.dataset
+import dataset
 
 import torch
 from models.feature_fusion import FeatureFusionBlock
