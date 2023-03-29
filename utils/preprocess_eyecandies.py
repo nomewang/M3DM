@@ -99,8 +99,8 @@ if __name__ == '__main__':
     for category_dir in categories_list:
         category_root_path = os.path.join(args.dataset_path, category_dir)
 
-        category_train_path = os.path.join(category_root_path,  'Eyecandies/' + category_dir + '/train/data')
-        category_test_path = os.path.join(category_root_path,  'Eyecandies/' + category_dir + '/test_public/data')
+        category_train_path = os.path.join(category_root_path, '/train/data')
+        category_test_path = os.path.join(category_root_path, '/test_public/data')
 
         category_target_path = os.path.join(args.target_dir, category_dir)
         os.mkdir(category_target_path)
