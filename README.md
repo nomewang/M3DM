@@ -65,7 +65,7 @@ python3 main.py \
 --memory_bank multiple \
 --rgb_backbone_name vit_base_patch8_224_dino \
 --xyz_backbone_name Point_MAE \
---save_feature True \
+--save_feature \
 ```
 
 Train the UFF:
