@@ -60,7 +60,7 @@ Put the checkpoint files in `checkpoints` folder.
 Train and test the double lib version and save the feature for UFF training:
 
 ```bash
-mkdir -p datasets/patch_lib ;
+mkdir -p datasets/patch_lib
 python3 main.py \
 --method_name DINO+Point_MAE \
 --memory_bank multiple \
