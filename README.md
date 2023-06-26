@@ -54,7 +54,7 @@ The following table lists the pretrain model used in M3DM:
 | ViT-b/8           | [Supervised ImageNet 1K](https://storage.googleapis.com/vit_models/augreg/B_8-i21k-300ep-lr_0.001-aug_medium1-wd_0.1-do_0.0-sd_0.0--imagenet2012-steps_20k-lr_0.01-res_224.npz) |
 | ViT-b/8           | [Supervised ImageNet 21K](https://storage.googleapis.com/vit_models/augreg/B_8-i21k-300ep-lr_0.001-aug_medium1-wd_0.1-do_0.0-sd_0.0.npz)                                        |
 | ViT-s/8           | [DINO](https://dl.fbaipublicfiles.com/dino/dino_deitsmall8_pretrain/dino_deitsmall8_pretrain.pth)                                                                               |
-
+| UFF                | [UFF Module](https://drive.google.com/file/d/1Z2AkfPqenJEv-IdWhVdRcvVQAsJC4DxW/view?usp=sharing)                                                                               |
 Put the checkpoint files in `checkpoints` folder.
 
 ## Train and Test
@@ -101,14 +101,12 @@ Note: if you set `--method_name DINO` or `--method_name Point_MAE`, set `--memor
 If you find this repository useful for your research, please use the following.
 
 ```bibtex
-
-@misc{wang2023multimodal,
+@inproceedings{wang2023multimodal,
   title={Multimodal Industrial Anomaly Detection via Hybrid Fusion},
   author={Wang, Yue and Peng, Jinlong and Zhang, Jiangning and Yi, Ran and Wang, Yabiao and Wang, Chengjie},
-  year={2023},
-  eprint={2303.00601},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8032--8041},
+  year={2023}
 }
 ```
 
