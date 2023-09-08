@@ -115,15 +115,15 @@ def preprocess_pc(tiff_path):
     # PAD WITH ZEROS TO LARGEST SIDE (SO THAT THE FINAL IMAGE IS SQUARE)
     padded_planeless_organized_pc = pad_cropped_pc(planeless_organized_pc, single_channel=False)
     padded_planeless_organized_rgb = pad_cropped_pc(planeless_organized_rgb, single_channel=False)
-    #if gt_exists:
-    #    padded_organized_gt = pad_cropped_pc(organized_gt, single_channel=True)
+    if gt_exists:
+       padded_organized_gt = pad_cropped_pc(organized_gt, single_channel=True)
 
     organized_clustered_pc, organized_clustered_rgb = connected_components_cleaning(padded_planeless_organized_pc, padded_planeless_organized_rgb, tiff_path)
     # SAVE PREPROCESSED FILES
     tiff.imsave(tiff_path, organized_clustered_pc)
-    #Image.fromarray(organized_clustered_rgb).save(rgb_path)
-    #if gt_exists:
-    #    Image.fromarray(padded_organized_gt).save(gt_path)
+    Image.fromarray(organized_clustered_rgb).save(rgb_path)
+    if gt_exists:
+       Image.fromarray(padded_organized_gt).save(gt_path)
 
 
 
